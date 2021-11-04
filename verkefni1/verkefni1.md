@@ -1,0 +1,1 @@
+### Uppsetning á raspberrypi zero
