@@ -30,7 +30,8 @@ mqtt_client.on_message = handle_telemetry
 
 while True:
     time.sleep(2)# sendir og tekur á móti boðum á 2 sek fresti
-    ```
+ 
+ ```
 ### Kóði raspberrypi zero
 ```python
 import json
@@ -75,4 +76,4 @@ while True:
 	print("Sending telemetry " , telemetry)
 	mqtt_client.publish(client_telemetry_topic, telemetry)
 	time.sleep(5)
-    
+```
