@@ -28,3 +28,34 @@ while True:
 	time.sleep(100)
 	aio.send("myanalog",msg)# ath myanalog er feed hjá mér í Adafruit
 ```
+## Kóði fyrir Arduino með rakamæli
+```c++
+
+const int AirValue = 620;  
+const int WaterValue = 310; 
+int soilMoistureValue = 0;
+int soilmoisturepercent=0;
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+soilMoistureValue = analogRead(A0);  
+//Serial.println(soilMoistureValue);
+soilmoisturepercent = map(soilMoistureValue, AirValue, WaterValue, 0, 100);
+if(soilmoisturepercent >= 100)
+{
+  Serial.println("100");
+}
+else if(soilmoisturepercent <=0)
+{
+  Serial.println("0");
+}
+else if(soilmoisturepercent >0 && soilmoisturepercent < 100)
+{
+  Serial.println(soilmoisturepercent+20);
+  //Serial.println("%");
+  
+}
+  delay(100);
+}
+```
