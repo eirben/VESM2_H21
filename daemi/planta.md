@@ -52,8 +52,7 @@ else if(soilmoisturepercent <=0)
 }
 else if(soilmoisturepercent >0 && soilmoisturepercent < 100)
 {
-  Serial.println(soilmoisturepercent+20);
-  //Serial.println("%");
+  Serial.println(soilmoisturepercent+20);//leiðrétting hjá mér til að fá raka tölu sem næst 100 í vatni má breyta :-)
   
 }
   delay(100);
