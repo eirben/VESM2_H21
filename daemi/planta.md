@@ -58,3 +58,20 @@ else if(soilmoisturepercent >0 && soilmoisturepercent < 100)
   delay(100);
 }
 ```
+## Einfaldur kóði til að kveikja og slokkva á dælu
+```c++
+#define MOTOR 3
+void setup() {
+  // put your setup code here, to run once:
+pinMode(MOTOR,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(MOTOR,HIGH);
+  delay(1000);
+  digitalWrite(MOTOR,LOW);
+  delay(1000);
+
+}
+```
