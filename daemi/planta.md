@@ -26,5 +26,5 @@ while True:
 	msg = read_ser.decode('utf-8')
 	print(msg)
 	time.sleep(100)
-	aio.send("myanalog",msg)
+	aio.send("myanalog",msg)# ath myanalog er feed hjá mér í Adafruit
 ```
