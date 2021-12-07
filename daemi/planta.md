@@ -75,3 +75,5 @@ void loop() {
 
 }
 ```
+## Mynd af tengingu dc mótors
+![Tenging](https://github.com/eirben/VESM2_H21/blob/main/daemi/motor_arduino.jpg)
