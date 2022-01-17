@@ -1,39 +1,12 @@
 ### Verkefni 6.4
 * h skrá
-* ``` c
-* H skrá (header)
-``` /************************ Adafruit IO Config *******************************/
-
-// visit io.adafruit.com if you need to create an account,
-// or if you need your Adafruit IO key.
+``` c
 #define IO_USERNAME "eirben"
 #define IO_KEY "aio_pXcC88q3elXwxNPcMquuynGEtK4p"
-
-/******************************* WIFI **************************************/
-
-// the AdafruitIO_WiFi client will work with the following boards:
-//   - HUZZAH ESP8266 Breakout -> https://www.adafruit.com/products/2471
-//   - Feather HUZZAH ESP8266 -> https://www.adafruit.com/products/2821
-//   - Feather HUZZAH ESP32 -> https://www.adafruit.com/product/3405
-//   - Feather M0 WiFi -> https://www.adafruit.com/products/3010
-//   - Feather WICED -> https://www.adafruit.com/products/3056
-//   - Adafruit PyPortal -> https://www.adafruit.com/product/4116
-//   - Adafruit Metro M4 Express AirLift Lite ->
-//   https://www.adafruit.com/product/4000
-//   - Adafruit AirLift Breakout -> https://www.adafruit.com/product/4201
-//   - Adafruit AirLift Shield -> https://www.adafruit.com/product/4285
-//   - Adafruit AirLift FeatherWing -> https://www.adafruit.com/product/4264
 
 #define WIFI_SSID "SiminnDDACDD"
 #define WIFI_PASS "0A8390745F"
 
-// uncomment the following line if you are using airlift
-// #define USE_AIRLIFT
-
-// uncomment the following line if you are using winc1500
-// #define USE_WINC1500
-
-// comment out the following lines if you are using fona or ethernet
 #include "AdafruitIO_WiFi.h"
 
 #if defined(USE_AIRLIFT) || defined(ADAFRUIT_METRO_M4_AIRLIFT_LITE) ||         \
@@ -52,57 +25,13 @@ AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS, SPIWIFI_SS,
 #else
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 #endif
-/******************************* FONA **************************************/
 
-// the AdafruitIO_FONA client will work with the following boards:
-//   - Feather 32u4 FONA -> https://www.adafruit.com/product/3027
-
-// uncomment the following two lines for 32u4 FONA,
-// and comment out the AdafruitIO_WiFi client in the WIFI section
-// #include "AdafruitIO_FONA.h"
-// AdafruitIO_FONA io(IO_USERNAME, IO_KEY);
-
-/**************************** ETHERNET ************************************/
-
-// the AdafruitIO_Ethernet client will work with the following boards:
-//   - Ethernet FeatherWing -> https://www.adafruit.com/products/3201
-
-// uncomment the following two lines for ethernet,
-// and comment out the AdafruitIO_WiFi client in the WIFI section
-// #include "AdafruitIO_Ethernet.h"
-// AdafruitIO_Ethernet io(IO_USERNAME, IO_KEY);c
-/************************ Adafruit IO Config *******************************/
-
-// visit io.adafruit.com if you need to create an account,
-// or if you need your Adafruit IO key.
-#define IO_USERNAME "eirben"
-#define IO_KEY "aio_pXcC88q3elXwxNPcMquuynGEtK4p"
-
-/******************************* WIFI **************************************/
-
-// the AdafruitIO_WiFi client will work with the following boards:
-//   - HUZZAH ESP8266 Breakout -> https://www.adafruit.com/products/2471
-//   - Feather HUZZAH ESP8266 -> https://www.adafruit.com/products/2821
-//   - Feather HUZZAH ESP32 -> https://www.adafruit.com/product/3405
-//   - Feather M0 WiFi -> https://www.adafruit.com/products/3010
-//   - Feather WICED -> https://www.adafruit.com/products/3056
-//   - Adafruit PyPortal -> https://www.adafruit.com/product/4116
-//   - Adafruit Metro M4 Express AirLift Lite ->
-//   https://www.adafruit.com/product/4000
-//   - Adafruit AirLift Breakout -> https://www.adafruit.com/product/4201
-//   - Adafruit AirLift Shield -> https://www.adafruit.com/product/4285
-//   - Adafruit AirLift FeatherWing -> https://www.adafruit.com/product/4264
+#define IO_USERNAME ""
+#define IO_KEY ""
 
 #define WIFI_SSID ""
 #define WIFI_PASS ""
 
-// uncomment the following line if you are using airlift
-// #define USE_AIRLIFT
-
-// uncomment the following line if you are using winc1500
-// #define USE_WINC1500
-
-// comment out the following lines if you are using fona or ethernet
 #include "AdafruitIO_WiFi.h"
 
 #if defined(USE_AIRLIFT) || defined(ADAFRUIT_METRO_M4_AIRLIFT_LITE) ||         \
@@ -124,29 +53,9 @@ AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 
 * main skrá
 ``` c
-// Adafruit IO Analog In Example
-// Tutorial Link: https://learn.adafruit.com/adafruit-io-basics-analog-input
-//
-// Adafruit invests time and resources providing this open source code.
-// Please support Adafruit and open source hardware by purchasing
-// products from Adafruit!
-//
-// Written by Todd Treece for Adafruit Industries
-// Copyright (c) 2016 Adafruit Industries
-// Licensed under the MIT license.
-//
-// All text above must be included in any redistribution.
 
-/************************** Configuration ***********************************/
-
-// edit the config.h tab and enter your Adafruit IO credentials
-// and any additional configuration needed for WiFi, cellular,
-// or ethernet clients.
 #include "config.h"
 
-/************************ Example Starts Here *******************************/
-
-// analog pin 0
 #define PHOTOCELL_PIN A0
 
 // photocell state
