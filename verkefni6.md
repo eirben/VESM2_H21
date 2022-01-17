@@ -4,7 +4,7 @@ kóðin sendir gildi yfir í Adafruit reikning sem birtir gildin í feed
 ## h skrá
 ``` c
 #define IO_USERNAME "eirben"
-#define IO_KEY "aio_pXcC88q3elXwxNPcMquuynGEtK4p"
+#define IO_KEY ""
 
 #define WIFI_SSID ""
 #define WIFI_PASS ""
