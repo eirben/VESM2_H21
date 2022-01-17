@@ -4,8 +4,8 @@
 #define IO_USERNAME "eirben"
 #define IO_KEY "aio_pXcC88q3elXwxNPcMquuynGEtK4p"
 
-#define WIFI_SSID "SiminnDDACDD"
-#define WIFI_PASS "0A8390745F"
+#define WIFI_SSID ""
+#define WIFI_PASS ""
 
 #include "AdafruitIO_WiFi.h"
 
