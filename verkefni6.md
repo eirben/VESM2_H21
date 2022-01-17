@@ -3,7 +3,7 @@ Kóðinn hér fyrir neðan er fyrir ESP 32 með photosellu tengda í Analog 0
 kóðin sendir gildi yfir í Adafruit reikning sem birtir gildin í feed
 ## h skrá
 ``` c
-#define IO_USERNAME "eirben"
+#define IO_USERNAME ""
 #define IO_KEY ""
 
 #define WIFI_SSID ""
