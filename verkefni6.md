@@ -1,5 +1,5 @@
 ### Verkefni 6.4
-* h skrá
+## h skrá
 ``` c
 #define IO_USERNAME "eirben"
 #define IO_KEY "aio_pXcC88q3elXwxNPcMquuynGEtK4p"
@@ -51,7 +51,7 @@ AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS, SPIWIFI_SS,
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 #endif
 
-* main skrá
+## main skrá
 ``` c
 
 #include "config.h"
