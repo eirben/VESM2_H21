@@ -132,4 +132,5 @@ Broker getur verið hvaða vél sem er nettengd í þessu tilviki er broker rasp
   * sudo apt-get upgrade
   * sudo apt-get install mosquitto
 1. gerið sudo nano /etc/mosquitto/mosquitto.conf og breytið, sjá !["mynd"](https://github.com/eirben/VESM2_H21/blob/main/verkefni5/mosquitto_conf.jpg)
-2. Búa til notanda (publisher) sudo mosquitto_passwd -c /etc/mosquitto/pwfile ***notandanafn***
+2. Búa til notanda og lykilorð (publisher) sudo mosquitto_passwd -c /etc/mosquitto/pwfile ***username***
+  * Til að eyða notanda sudo mosquitto_passwd -d /etc/mosquitto/pwfile username
