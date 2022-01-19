@@ -123,3 +123,11 @@ void loop() {
 ## Uppsetning á broker (raspberrypi)
 Broker getur verið hvaða vél sem er nettengd í þessu tilviki er broker raspberrpi zero
 # uppsetning:
+1. Finna ip tölu á broker (raspberrypi)
+1. Stofna user (username) og lykilorð (password)
+2. Búa til einstakt userid (unique)
+3. Finna WiFi SSID og WiFi password
+4. Innstall
+* sudo apt-get update 
+* sudo apt-get upgrade
+* sudo apt-get install mosquitto
