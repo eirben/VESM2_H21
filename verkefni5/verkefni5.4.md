@@ -131,5 +131,5 @@ Broker getur verið hvaða vél sem er nettengd í þessu tilviki er broker rasp
   * sudo apt-get update 
   * sudo apt-get upgrade
   * sudo apt-get install mosquitto
-1. gerið sudo nano /etc/mosquitto/mosquitto.conf og breytið. 
+1. gerið sudo nano /etc/mosquitto/mosquitto.conf og breytið, sjá ["mynd"](https://github.com/eirben/VESM2_H21/blob/main/verkefni5/mosquitto_conf.jpg)
 2. 
