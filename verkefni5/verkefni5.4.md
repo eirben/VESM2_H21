@@ -134,4 +134,8 @@ Broker getur verið hvaða vél sem er nettengd í þessu tilviki er broker rasp
 1. gerið sudo nano /etc/mosquitto/mosquitto.conf og breytið, sjá !["mynd"](https://github.com/eirben/VESM2_H21/blob/main/verkefni5/mosquitto_conf.jpg)
 2. Búa til notanda og lykilorð (publisher) sudo mosquitto_passwd -c /etc/mosquitto/pwfile ***username***
   * Til að eyða notanda *sudo mosquitto_passwd -d /etc/mosquitto/pwfile username*
-  * Tila að sjá stöðu brokera **sudo systemctl status mosquitto**
+  * Til að sjá stöðu brokera **sudo systemctl status mosquitto**
+  * Til að ræsa Mosquitto **sudo systemctl start mosquitto**
+  * Til að stoppa Mosquitto **sudo systemctl stop mosquitto**
+  * Til að endurræsa Mosquitto **sudo systemctl restart mosquitto**
+  * Til að Mosquitto ræsi sjálkrafa við ræsingu vélar **sudo systemctl enable mosquitto**
