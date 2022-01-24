@@ -5,9 +5,7 @@ ESP32 með tsl2591 lightsensor sendir data á AdafruitIO
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include "Adafruit_TSL2591.h"
-/************************ Example Starts Here *******************************/
 
-// Button Pin
 Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591); // pass in a number for the sensor identifier (for your use later)
 AdafruitIO_Feed *light = io.feed("lightsensor");
 
