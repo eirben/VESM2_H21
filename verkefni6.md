@@ -58,6 +58,52 @@ while True:
     time.sleep(1)
 
 ```
+### Verkefni 6.3
+Raspberrypi zero með takka sendir stöðu takka á AdafruitIo sem sýnir stöðuna í stjórnborði
+## Kóði
+``` Python3
+# Import standard python modules
+import time
+
+# import Adafruit Blinka
+import digitalio
+from gpiozero import LED
+
+# import Adafruit IO REST client.
+from Adafruit_IO import Client, Feed, RequestError
+
+# Set to your Adafruit IO key.
+# Remember, your key is a secret,
+# so make sure not to publish it when you publish this code!
+ADAFRUIT_IO_KEY = 'aio_gJyU003zPwa5Yww94nMVgqAT4AuQ'
+
+# Set to your Adafruit IO username.
+# (go to https://accounts.adafruit.com to find your username)
+ADAFRUIT_IO_USERNAME = 'eirben'
+
+# Create an instance of the REST client.
+aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
+
+try: # if we have a 'digital' feed
+    digital = aio.feeds('button')
+except RequestError: # create a digital feed
+    feed = Feed(name="button")
+    digital = aio.create_feed(feed)
+
+# led set up
+led1 = LED(17)
+led1.off()
+while True:
+        data = aio.receive(digital.key)
+        if data.value == '1':
+                print(data.value+'\n')
+                led1.on()
+                #time.sleep(3)
+        else:
+                print(data.value+'\n')
+                led1.off()
+        time.sleep(3)
+```
 
 ### Verkefni 6.4
 Kóðinn hér fyrir neðan er fyrir ESP 32 með photosellu tengda í Analog 0
