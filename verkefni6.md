@@ -59,8 +59,8 @@ while True:
 
 ```
 ### Verkefni 6.3
-Raspberrypi zero með takka sendir stöðu takka á AdafruitIo sem sýnir stöðuna í stjórnborði
-## Kóði
+Raspberrypi zero með led, þegar ýtt er á takka í AdafruitIO þá kveiknar á ledi raspberrypi 
+### Kóði
 ``` Python3
 # Import standard python modules
 import time
