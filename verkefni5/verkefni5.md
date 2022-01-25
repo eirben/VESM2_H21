@@ -1,5 +1,5 @@
 ## Lausn á verkefni 5.2
-### Kóði publischer
+### Kóði subscriber
 ```python
 
 import json
@@ -32,7 +32,7 @@ while True:
     time.sleep(2)# sendir og tekur á móti boðum á 2 sek fresti
  
  ```
-### Kóði raspberrypi zero
+### Kóði raspberrypi zero publischer
 ```python
 import json
 import time
