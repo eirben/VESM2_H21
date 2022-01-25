@@ -1,5 +1,5 @@
 ## Lausn á verkefni 5.2
-### Kóði server
+### Kóði publischer
 ```python
 
 import json
