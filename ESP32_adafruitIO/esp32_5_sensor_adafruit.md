@@ -1,4 +1,5 @@
-### Esp32 með tengingu við AdafruitIO og fimm feed, þessi feed er led, takki, rakamælir, hitamælir og ljósmælir. Feedin heita hér 'led-one' 'button', 'humid', 'temp' og light.
+### Esp32 með tengingu við AdafruitIO og fimm feed
+Þessi feed er led, takki, rakamælir, hitamælir og ljósmælir. Feedin heita hér 'led-one' 'button', 'humid', 'temp' og light.
 Adafruit sendir skilaboð að kveykja á led í stjórnborði, öll feedin eru í stjórnborði með viðeigangi viðmóti (Block)
 ### kóði
 ``` c
