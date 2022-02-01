@@ -36,28 +36,11 @@ void handleMessage(AdafruitIO_Data *data) {
 ```
 ### h skrá
 ``` C
-/************************ Adafruit IO Config *******************************/
+#define IO_USERNAME ""
+#define IO_KEY ""
 
-// visit io.adafruit.com if you need to create an account,
-// or if you need your Adafruit IO key.
-#define IO_USERNAME "eirben"
-#define IO_KEY "aio_mnLZ69CT0N7U8FXI8K6HvWgpgr6j"
-
-/******************************* WIFI **************************************/
-
-// the AdafruitIO_WiFi client will work with the following boards:
-//   - HUZZAH ESP8266 Breakout -> https://www.adafruit.com/products/2471
-//   - Feather HUZZAH ESP8266 -> https://www.adafruit.com/products/2821
-//   - Feather HUZZAH ESP32 -> https://www.adafruit.com/product/3405
-//   - Feather M0 WiFi -> https://www.adafruit.com/products/3010
-//   - Feather WICED -> https://www.adafruit.com/products/3056
-//   - Adafruit PyPortal -> https://www.adafruit.com/product/4116
-//   - Adafruit Metro M4 Express AirLift Lite ->
-//   https://www.adafruit.com/product/4000
-//   - Adafruit AirLift Breakout -> https://www.adafruit.com/product/4201
-
-#define WIFI_SSID "SiminnDDACDD"
-#define WIFI_PASS "0A8390745F"
+#define WIFI_SSID ""
+#define WIFI_PASS ""
 
 // uncomment the following line if you are using airlift
 //#define USE_AIRLIFT
