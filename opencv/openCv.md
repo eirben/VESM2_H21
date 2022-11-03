@@ -5,3 +5,5 @@
 [Raspberrypi OpenCV](https://www.youtube.com/watch?v=NPXBRX7N3ec)
 
 [Meira efni um raspi uppsetningu](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/)
+
+[Google dæmi faceregon](https://www.dexterindustries.com/howto/use-google-cloud-vision-on-the-raspberry-pi/)
